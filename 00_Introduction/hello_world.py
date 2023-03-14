@@ -5,25 +5,27 @@
 
 
 
-#suma
-#resta
-#multiplicacion
-#Division
-#Exponencial
-#modular
-print(84//3) #division entera   28
-#Bool
-print( )
-#Tipos de datos 7
+print(5 + 32)#suma                  37
+print(35 - 23)#resta                12
+print(7 * 6)#multiplicacion         42
+print(45 / 6)#Division              7.5
+print(7 ** 4)#Exponencial           2401
+print(53 % 4)#modular               1
+print(954//32) #division entera     29
+print(42.6<43)#Bool                 True
 
 
-#Type(1)
+#Data types:
 
-print(type(3.5 * 9.78))#Int
-#Float
-print(type(1j + 3 + 5j))#Complex // Complejo only works with j
-#String
-#List
-#Dictionary
-print(type({9.8, 3.14, 2.7}))#Set // Conjunto 
-print(type((9.8, 3.14, 2.7)))#tuble // Tupla
+# Tipos de datos
+print(type(3.5 * 9.78))          #<class 'float'>
+print(type(5<10))                #<class 'bool'>
+print(type(5 + 3))               #<class 'int'>
+print(type(3.1415 * 15.73))      #<class 'float'>
+print(type(2j + 1 + 5j + 3))     #<class 'complex'>
+print(type('Python'))            #<class 'str'>
+numeros = ['Y', 43, 22]
+print(type(numeros))             #<class 'list'>
+print(type({'que hace':'de repaso'}))  #<class 'dict'>
+print(type({'dia pi', 3.14, 2023}))    #<class 'set'>
+print(type(('hola', [2,1], 2)))        #<class 'tuple'>
