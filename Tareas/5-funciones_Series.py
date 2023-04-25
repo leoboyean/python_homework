@@ -4,15 +4,15 @@ def printer(something = "test to print something"):
 
 def rangoToN(n):
     for i in range(0,n):
-            printer(i)
+            printer("-->>",i)
 
 def rangoToSteps(n):
         for i in range(0,n,3):
-            printer(i)
+            printer("-- >> -->> ",i)
 
 def rangeInverse(n):
     for i in range(n,0):
-        prnter(i)
+        printer(i)
         
             
 def roc(value):
@@ -31,18 +31,18 @@ def initializer():
     printer("there are some series that you can check:")
     
 #Series collection
-    def fibonacci(size):
-        if (size>=1):
-            printer(msjStart1 + str(size) + msjStart2)
-            currMemory = 0
-            lastElemnt = 1
-            for i in range(0, size):
-                print("elemento ", currMemory)
-                aux  = currMemory + lastElemnt
-                lastElemnt = currMemory
-                currMemory = aux
-        else:
-            printer("El elemento "+str(size) + msjError)
+def fibonacci(size):
+    if (size>=1):
+        printer(msjStart1 + str(size) + msjStart2)
+        currMemory = 0
+        lastElemnt = 1
+        for i in range(0, size):
+            print("elemento ", currMemory)
+            aux  = currMemory + lastElemnt
+            lastElemnt = currMemory
+            currMemory = aux
+    else:
+        printer("El elemento "+str(size) + msjError)
         
 
 
