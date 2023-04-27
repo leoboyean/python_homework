@@ -1,6 +1,5 @@
 ### Ejercicios
 
-
 #1. Declare an empty list
 emptyList = []*3        #
 print(emptyList)
@@ -12,26 +11,30 @@ print(len(myList))
 #4. Get the first item, the middle item and the last item of the list
 sizeList = len(myList)
 if(sizeList >= 3) :
-    first, secong, rest , last= myList
-    print("Fisrt item %s, my second item is %s and my last item is> " first,  secong, last)
+    first, second, *rest = myList
+    last = myList[len(myList)-1]
+    print("First item {}, my second item is {} and my last item is> ".format( first,  second, last))
 elif(sizeList == 2):
     print("This list doesn't have more than two element!")
 elif(sizeList == 1):
     print("This list doesn't have more than one element!")
 #5. Declare a list called mixed_data_types, put your(name, age, height, marital status, address)
-mixed_data_types = ["Joel Aparicio", 29, 1.83, single, "jerez, zacatecas, Mx"]
+mixed_data_types = ["Joel Aparicio", 29, 1.83, "single", "jerez, zacatecas, Mx"]
 '''
 6. Declare a list variable named it_companies and assign initial values Facebook, Google, Microsoft, manzana, IBM, Oracle and Amazon.'''
 #7. Print the list using _print()_
 print(["Hola", "mis amigos", "del curso de python"])
 '''
-8. Print the number of companies in the list
-9. Print the first, middle and last company
+8. Print the number of companies in the list'''
+
+for i in myList:
+    print(i)
+'''9. Print the first, middle and last company
 10. Print the list after modifying one of the companies .
 11. Add an IT company to it_companies'''
 #12. Insert an IT company in the middle of the companies list
-mid =len(mixed_data_types)/2
-mixed_data_types.append(mid,"Apple")
+#mid =len(mixed_data_types)/2
+#mixed_data_types.append(mid,"Apple")
 
 '''
 13. Change one of the it_companies names to uppercase (IBM excluded!)

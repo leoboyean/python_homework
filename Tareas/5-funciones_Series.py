@@ -1,28 +1,31 @@
-  
+msjStart1 = " Hola que tal vienvenido!"
+msjStart2 = " heaqui algunas funciones"
+msjError = "Valor inesperado!"
+
 def printer(something = "test to print something"):
     print(something)
 
 def rangoToN(n):
     for i in range(0,n):
-            printer("-->>",i)
+        printer(i)
 
 def rangoToSteps(n):
-        for i in range(0,n,3):
-            printer("-- >> -->> ",i)
+    for i in range(0,n,3):
+        printer(i)
 
 def rangeInverse(n):
-    for i in range(n,0):
+    for i in reversed(n):
         printer(i)
         
             
 def roc(value):
     if type(value) == int:
-        if a:
+        if 1:
             rangoToN(10)
-    elif x:
-        rangoToSteps(323)
-    elif y:
-        rangeInverse(123)
+        elif 2:
+            rangoToSteps(323)
+        elif 3:
+            rangeInverse(123)
     else:
         printer('the value inserted isn\'t valid')
         
@@ -42,10 +45,14 @@ def fibonacci(size):
             lastElemnt = currMemory
             currMemory = aux
     else:
-        printer("El elemento "+str(size) + msjError)
-        
+        printer("El elemento {} {}".format(str(size), msjError))        
 
 
+initializer()
 printer()
 printer("Hola, como estan?, estamos en el mismo metodo")
 rangoToN(23)
+rangeInverse("joel")
+fibonacci(9)
+roc("a")
+roc(2)
